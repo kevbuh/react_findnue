@@ -1,0 +1,27 @@
+{
+  "name": "react_findnue",
+  "version": "1.0.0",
+  "description": "react server for findnue",
+  "main": "./server/routes/index.js",
+  "dependencies": {
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0",
+    "react-magnific-popup": "^1.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinbuhlerr/react_findnue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinbuhlerr/react_findnue/issues"
+  },
+  "homepage": "https://github.com/kevinbuhlerr/react_findnue#readme"
+}
