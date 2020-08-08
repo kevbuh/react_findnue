@@ -1,8 +1,9 @@
 import React from 'react'
-import './Navbar.css'
+import '../CSS/Navbar.css'
 import { Link } from 'react-router-dom'
-import './global.css'
+import '../CSS/global.css'
 import './OtherNavbarScripts'
+import '../CSS/atMedia.css'
 
 function OtherNavbar() {
   return (

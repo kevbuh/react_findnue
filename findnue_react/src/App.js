@@ -5,12 +5,13 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Navbar from './components/Navbar'
-import OtherNavbar from './components/OtherNavbar';
-import MainBanner from './components/MainBanner'
-import Homeblocks from './components/Homeblocks'
-import TwoBlocks from './components/TwoBlocks'
-import Footer from './components/Footer'
+import Navbar from './components/JS/Navbar'
+import OtherNavbar from './components/JS/OtherNavbar';
+import MainBanner from './components/JS/MainBanner'
+import Homeblocks from './components/JS/Homeblocks'
+import TwoBlocks from './components/JS/TwoBlocks'
+import Footer from './components/JS/Footer'
+import Account from './components/JS/Account'
 
 function App() {
   return (
@@ -18,19 +19,33 @@ function App() {
       <div className="App">
       <Switch>
       <Route path="/mens">
-          <OtherNavbar />
+      <Navbar />
+          <MainBanner />
+          
+          <Footer />
         </Route>
         <Route path="/womens">
-        <OtherNavbar />
+        <Navbar />
+          
+          <TwoBlocks />
+          <Footer />
         </Route>
         <Route path="/about">
-        <OtherNavbar />
+        <Navbar />
+          <MainBanner />
+          
+          <Footer />
         </Route>
         <Route path="/news">
-        <OtherNavbar />
-        </Route>
+        <Navbar />
+          <MainBanner />
+          
+          <Footer />
+          </Route>
         <Route path="/account">
-        <OtherNavbar />
+        <Navbar />
+          <Account />
+          <Footer />
         </Route>
         <Route path="/">
           <Navbar />

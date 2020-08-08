@@ -10,8 +10,16 @@
 * [] News
 * [] About
 * [] Account
+* [] Jquery
+  * [] Magnific Popups
+* [] Authentification
+* [] Backend
 
-* [] ---------------------------------------------
+
+
+
+
+* [] ----------------Old README---------------------
 
 - [] Basic MERN/CRUD App
 

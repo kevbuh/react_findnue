@@ -1,6 +1,7 @@
 import React from 'react'
-import './global.css'
-import './TwoBlocks.css'
+import '../CSS/global.css'
+import '../CSS/TwoBlocks.css'
+import '../CSS/atMedia.css'
 
 function TwoBlocks() {
   return (

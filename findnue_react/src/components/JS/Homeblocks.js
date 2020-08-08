@@ -1,6 +1,7 @@
 import React from 'react'
-import './global.css'
-import './Homeblocks.css'
+import '../CSS/global.css'
+import '../CSS/Homeblocks.css'
+import '../CSS/atMedia.css'
 
 function Homeblocks() {
   return (

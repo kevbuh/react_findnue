@@ -1,7 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import './global.css'
-import './MainBanner.css'
+import '../CSS/global.css'
+import '../CSS/MainBanner.css'
+import '../CSS/atMedia.css'
 
 function MainBanner() {
   return (

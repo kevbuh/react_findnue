@@ -1,6 +1,7 @@
 import React from 'react'
-import './global.css'
-import './Footer.css'
+import '../CSS/global.css'
+import '../CSS/Footer.css'
+import '../CSS/atMedia.css'
 
 function Footer() {
   return (

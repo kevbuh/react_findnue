@@ -1,8 +1,9 @@
 import React from 'react'
-import './Navbar.css'
+import '../CSS/Navbar.css'
 import { Link } from 'react-router-dom'
-import './global.css'
-import '../scripts'
+import '../CSS/global.css'
+import './scripts'
+import '../CSS/atMedia.css'
 
 function Navbar() {
   return (
@@ -40,7 +41,7 @@ function Navbar() {
             <Link to="/news">News</Link>
           </li>
           <li>
-            <Link to="/login">Account</Link>
+            <Link to="/account">Account</Link>
           </li>
         </ul>
       </div>
