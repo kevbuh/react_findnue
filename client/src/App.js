@@ -5,19 +5,36 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Navbar from './components/JS/Navbar'
+import Navbar from './components/JS/Navbar';
 import OtherNavbar from './components/JS/OtherNavbar';
-import MainBanner from './components/JS/MainBanner'
-import Homeblocks from './components/JS/Homeblocks'
-import TwoBlocks from './components/JS/TwoBlocks'
-import Footer from './components/JS/Footer'
-import Account from './components/JS/Account'
-import BlackNavBar from './components/JS/BlackNavBar'
+import MainBanner from './components/JS/MainBanner';
+import Homeblocks from './components/JS/Homeblocks';
+import TwoBlocks from './components/JS/TwoBlocks';
+import Footer from './components/JS/Footer';
+import Account from './components/JS/Account';
+import BlackNavBar from './components/JS/BlackNavBar';
 
-function App() {
+class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={apiResponse:""}
+  }
+
+  callAPI(){
+    fetch("http://localhost:1739/")
+      .then( res => res.text())
+      .then(res => this.setState({apiResponse: res}))
+  }
+
+  componentWillMount(){
+    this.callAPI()
+  }
+
+render(){
   return (
     <Router>
       <div className="App">
+      <p>{this.state.apiResponse}</p>
       <Switch>
       <Route path="/mens">
           <BlackNavBar />
@@ -26,14 +43,12 @@ function App() {
         </Route>
         <Route path="/womens">
         <BlackNavBar />
-          
           <TwoBlocks />
           <Footer />
         </Route>
         <Route path="/about">
         <BlackNavBar />
           <MainBanner />
-          
           <Footer />
         </Route>
         <Route path="/news">
@@ -58,6 +73,7 @@ function App() {
       </div>
     </Router>
   );
+}
 }
 
 export default App;

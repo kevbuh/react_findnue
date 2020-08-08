@@ -1,9 +1,9 @@
-
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const morgan = require('morgan');
+const cors = require('cors');
 // const exphbs = require('express-handlebars');
 // const path = require('path');
 const passport = require('passport');
@@ -43,6 +43,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
+//Cors
+app.use(cors());
+
 // //Static Folder
 // app.use(express.static(path.join(__dirname, 'public')));
 
@@ -53,6 +56,6 @@ app.use('/account', require('./routes/account'));
 app.use('/categories', require('./routes/categories'));
 app.use('/seasons', require('./routes/seasons'));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1739;
 
 app.listen(PORT, console.log(`Running on port ${PORT}`));
