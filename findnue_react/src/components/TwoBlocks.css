@@ -1,0 +1,65 @@
+.services {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.service a {
+color: #111111;
+margin-left: 0.5rem;
+font-size: 1.3rem;
+}
+
+.service-home {
+width: calc(50% - 9px);
+text-align: center;
+border: 1px solid #f1f1f1;
+margin: 20px 0;
+color: #ffffff;
+cursor: pointer;
+transition: 0.3s linear;
+height: 20vh;
+background: #a8a8a8;
+}
+
+.service-home::after {
+color: #111111;
+}
+
+.service-home span {
+color: #111111;
+font-size: 1.3rem;
+}
+
+.service-home:hover {
+background-color: #444444;
+}
+
+.service-home.three {
+background: url(../images/stock-thrasher-door.jpeg) no-repeat center;
+}
+
+.service-home.four {
+background: url(../images/stock-hawaii.jpeg) no-repeat center;
+}
+
+.link-a {
+text-align: center;
+color: #111111;
+font-size: 1.7rem;
+margin-bottom: 2rem;
+font-weight: 800;
+}
+
+.block-two {
+padding: 5rem;
+background: #a8a8a8;
+margin: 1rem 0;
+width: 85vw;
+height: 15vw;
+text-align: center;
+}
+
+.block-two.five {
+background: url(../images/stock-men-group.jpeg) no-repeat center;
+}

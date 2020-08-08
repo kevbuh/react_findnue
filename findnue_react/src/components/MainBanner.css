@@ -1,0 +1,70 @@
+#welcome-home {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60vh;
+margin-top: 0;
+padding: 0;
+background: url(../images/stock-wideocean.jpeg) no-repeat top;
+background-size: cover;
+}
+
+#welcome-home h1 {
+font-size: 5rem;
+color: #ffffff;
+right: 30%;
+top: 18%;
+}
+
+
+.middle ::placeholder {
+color: #ffffff;
+}
+
+span .home-search {
+display: inline-block;
+position: relative;
+padding: 0;
+margin: 0 !important;
+}
+
+.home-search i {
+height: 30px !important;
+position: relative;
+left: 56px;
+}
+
+
+.fas.fa-search.home-search {
+display: none;
+}
+
+.fa-search {
+font-size: inherit;
+height: 1em;
+overflow: visible;
+cursor: pointer;
+position: relative;
+z-index: 2;
+right: 0.75rem;
+}
+
+.nameZoneHome {
+outline: none;
+position: relative;
+height: 84px;
+border-radius: 3px;
+border: 1px solid #ffffff;
+background-color: transparent;
+padding-right: 15px;
+box-shadow: none;
+height: 50px;
+text-overflow: ellipsis;
+color: #ffffff;
+padding: 1rem 40% 1rem 1rem;
+bottom: 12px;
+width: 28.4rem;
+font-size: 23px;
+line-height: 20px;
+margin: 40px 0;
+}

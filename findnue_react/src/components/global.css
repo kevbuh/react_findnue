@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  box-sizing: border-box;
+  }
+  
+  .inner-width {
+  max-width: 90%;
+  margin: auto;
+  padding: 0px 40px;
+  margin-top: 6rem;
+  }
+  
+  body {
+  background-color: #f1f1f1;
+  }
+  
+  a:visited {
+  color: #000000;
+  }
+  
+  /* :: */
+  :root {
+  --primary-color: #a8a8a8;
+  --bone: #f1f1f1;
+  --webkit-scrollbar-thumb: #111111;
+  --sell: #ff5a5f;
+  --buy-btn: #08a05c;
+  }
+  
+  ::selection {
+  background-color: var(--primary-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  }
+  
+  .mobile {
+  display: none;
+  }
+  
+  /* HTML*/
+  html {
+  -webkit-text-size-adjust: 100%;
+  }
